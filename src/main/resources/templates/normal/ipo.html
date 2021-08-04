@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang ="en" xmlns:th="http://www.thymeLeaf.org" th:replace="base::Layout(~{::section})">
+<head>
+<meta charset="UTF-8"/>
+<title>This is about page</title>
+</head>
+<body>
+<section th:action="@{/ipo}" method="get">
+<h1>Welcome to IPO Details Page</h1>
+<h2>Click on button to Edit IPOs</h2>
+<button class="btn bg-primary btn-lg text-white">Show IPO</button>
+<button class="btn bg-primary btn-lg text-white">Edit IPO</button>
+</section>
+</body>
+</html>
+

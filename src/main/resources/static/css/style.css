@@ -1,0 +1,84 @@
+body{
+	background: #e2e2e2!important;
+}
+
+.bg-primary{
+	background: #009688 !important;
+}
+
+.banner{
+	width:100%;
+	height:93vh;
+	background:linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8)),url(../img/stock.jpg);
+	background-size:cover;
+	color:white;
+	
+}
+
+.my-card{
+	padding: 20px;
+	background: #FFFFFF;
+}
+
+.head {
+font-family: 'Kaushan Script', cursive;
+
+}
+
+.loginimage {
+width: 100%;
+height:93vh;
+background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)),
+url(../image/image20.jpeg);
+color: white;
+background-size: cover;
+}
+
+.myform {
+width: 100%;
+background-color: #fff;
+background-clip: padding-box;
+border: 1px solid rgba(0, 0, 0, .2);
+border-radius: 1.1rem;
+outline: 0;
+font-family: Comic Sans MS, Comic Sans, cursive;
+color: black;
+}
+
+a{
+text-decoration: none !important;
+}
+
+.tx-tfm {
+text-transform: uppercase;
+}
+
+.mybtn {
+border-radius: 50px;
+}
+
+.login-or {
+position: relative;
+color: #aaa;
+margin-top: 10px;
+margin-bottom: 10px;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+
+.span-or {
+display: block;
+position: absolute;
+left: 50%;
+top: -2px;
+margin-left: -25px;
+background-color: #fff;
+width: 50px;
+text-align: center;
+}
+
+.hr-or {
+height: 1px;
+margin-top: 0px !important;
+margin-bottom: 0px !important;
+}

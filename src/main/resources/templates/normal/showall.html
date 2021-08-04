@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeLeaf.org">
+<title>Insert title here</title>
+</head>
+<body>
+ <div class="container">
+
+ <div th:if="$(not #lists.isEmpty(ipo))">
+
+    <h2> Teams List </h2>
+
+    <table class = "table table-striped">       
+    <tr>
+    <th> IPO Name </th>
+    </tr>       
+    <tr th:each="ipo : ${ipos}">
+    <td th:text="${ipos.ipoid}"></td>
+    <td th:text="${ipos.company_name}"></td>
+    <td th:text="${ipos.price_per_share}"></td>
+    <td th:text="${ipos.remarks}"></td>
+    <td th:text="${ipos.totalnumberof_shares}"></td>
+    <td th:text="${ipos.open_date_time}"></td>
+    <td th:text="${ipos.companyid}"></td>
+    <td th:text="${ipos.stock_exchangeid}"></td>
+    
+    </tr>
+
+ </div>        
+ </div>   
+</body>
+</html>
+</html>

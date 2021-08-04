@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang ="en" xmlns:th="http://www.thymeLeaf.org" th:replace="base::Layout(~{::section})">
+<head>
+<meta charset="UTF-8"/>
+<title>This is about page</title>
+</head>
+<body>
+<section>
+<div class = "container">
+<div class = " row">
+<div class = "col-md-8 offset-md-2">
+<div class="my-card">
+<div class = "container text-center">
+<img class = " " style = "width:100px;" src="" th:src="@{/img/edit.png}"/>
+</div>
+<h1 class="text-center">Register Here!!!</h1>
+
+<form action=" " th:action="@{/do_register}" method="post" th:object = "${user}">
+
+ <div class="mb-3">
+ 
+ 
+    <!-- Userid -->
+    <label for="id_field" class="form-label">Your Id</label>
+    <input 
+    name = "UserId"
+    type="number" 
+    class="form-control" 
+    id="id_field" 
+    aria-describedby="emailHelp"
+    placeholder="Enter here"
+    required
+    th.value="${user.Userid}">
+ </div>
+    
+     <!-- Username -->
+    <div class="mb-3">
+    <label for="name_field" class="form-label">Your UserName</label>
+    <input 
+    name = "username"
+    type="text" 
+    class="form-control" 
+    id="name_field" 
+    aria-describedby="emailHelp"
+    placeholder="Enter here"
+    required
+    th:value="${user.username}"/>
+     </div>
+     
+     
+    <!-- Password -->
+    <div class="mb-3">
+    <label for="password_field" class="form-label">Your Password</label>
+    <input 
+    name = "password"
+    type="password" 
+    class="form-control" 
+    id="password_field" 
+    aria-describedby="emailHelp"
+    placeholder="Enter here"
+    required>
+    </div>
+    
+    
+    <!-- UserType -->
+    <div class="mb-3">
+    <label for="name_field" class="form-label">Your UserType</label>
+    <input 
+    name = "UserType"
+    type="text" 
+    class="form-control" 
+    id="name_field" 
+    aria-describedby="emailHelp"
+    placeholder="Enter here"
+    th:value="${user.UserType}"/>
+     </div>
+ 
+ 
+
+    <!-- Email -->
+    <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input name = "email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+    placeholder="Enter here"
+    required
+    th:value="${user.Email}">
+    </div>
+  
+
+  
+
+ 
+    <!-- MobileNumber -->
+    <div class="mb-3">
+    <label for="number_field" class="form-label">Your Number</label>
+    <input 
+    name = "MobileNumber"
+    type="number" 
+    class="form-control" 
+    id="number_field" 
+    aria-describedby="emailHelp"
+    placeholder="Enter here"
+    required
+    th:value="${user.MobileNumber}">
+    </div>
+ 
+ <!-- Terms and Condition Agreement -->
+ <div class = "form-group form-check">
+ <input type = "checkbox"
+ name = "agreement"
+ class = "form-check-input"
+ id = "agreement"/>
+ <label for ="agreement">Accept Terms and Conditions</label>
+ </div>
+ 
+ <div class ="container">
+ <button class = "btn bg-primary text-white">Submit</button>
+ </div>
+ 
+</form>
+
+</div>
+</div>
+</div>
+</div>
+</section>
+</body>
+</html>
+
